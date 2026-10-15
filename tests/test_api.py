@@ -1,5 +1,4 @@
-import calendar
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, timedelta
 import pytest
 from fastapi.testclient import TestClient
 from bson import json_util
@@ -8,15 +7,12 @@ import pathlib
 from app.main import (
     app,
     db,
-    client,
     ensure_indexes,
-    hhmm,
     shift_bounds,
     attendance_date,
     compute_late_minutes,
     compute_work_hours,
     compute_overtime,
-    derive,
     working_days,
     IST,
     UTC,

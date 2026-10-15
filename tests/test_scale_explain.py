@@ -1,8 +1,8 @@
 import json
 import time
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, timedelta
 from fastapi.testclient import TestClient
-from app.main import app, db, client, ensure_indexes, UTC
+from app.main import app, db, ensure_indexes, UTC
 
 test_client = TestClient(app)
 

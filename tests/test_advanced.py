@@ -1,13 +1,10 @@
 import concurrent.futures
-from datetime import date, datetime, timedelta, timezone
-import pytest
+from datetime import datetime
 from fastapi.testclient import TestClient
 
 from app.main import (
     app,
     db,
-    client,
-    ensure_indexes,
     to_ms,
     UTC,
     IST,
